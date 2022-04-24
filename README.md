@@ -137,8 +137,108 @@ weekly_sales['Total Price'] = total_prices
 weekly_sales 
 
 ```
-## end numpy - thiếu bổ sung sau !
+# Xem thêm tại đây để hiểu rõ hơn 
+[xem thêm tại đây](https://github.com/chudinhhuan/Python_Science/blob/main/lesson2-numpy.ipynb)
+![image](https://user-images.githubusercontent.com/90398366/164959939-77f17ead-c6da-4e82-a860-e84340cb33b3.png)
+
+# end numpy - thiếu bổ sung sau !
+
+# III . Tìm hiểu về thư viện Matplotlip 
+### import library 
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+```
+## 1.introduction matplotlip 
+### Hiển thị backgroud đơn giản 
+``` 
+plt.style.available
+plt.style.use('seaborn-whitegrid')
+# backgroud for graph
+plt.plot(); #display
+```
+### ví dụ vẽ đồ thị đơn giản
+```
+x = [1,2,3,4]
+y=[10,8,6,9]
+plt.plot(x,y,color='red');
+```
+### Pylot API vs Object-Oriented(OO) API
+- #pylot API - Quickly #OO API -> Advanced
+## Most common types of Matplotlib plost
+### line  scatter  bar  hist   subplots()
+- line : đồ thị đạng đường
+```
+# OO API plot of line chart
+fig,ax = plt.subplots()
+ax.plot(x,x**3);
+```
+-  Scatter: đồ thị dạng nét đứt , chấm chấm 
+```
+#Scatter
+plt.scatter(x,np.exp(x)) 
+# y=e^x
+```
+> Vidu2 : Scatter 
+```
+#Prepare new data
+rng = np.random.RandomState(0)
+x = rng.randn(100)
+y = rng.randn(100)
+sizes = 100*rng.rand(100)
+color = rng.rand(100)
+fig,ax = plt.subplots()
+img1 = ax.scatter(x,y,s=sizes,c=color,cmap='viridis')#alpha=0.3;
+fig.colorbar(img1)
+```
+- Bar  : dạng đồ thị cột vertical và horizontal 
+
+# Example
+> Lấy dữ liệu 
+[dataset](https://github.com/chudinhhuan/Python_Science/blob/main/california_cities.csv)
+>Click vào raw sau đó mở ra và bấm vào lưu dataset -> tải thành công
+- Đọc dataset 
+```
+cities = pd.read_csv('california_cities.csv')
+```
+- Tương quan dữ liệu được thể hiện như sau 
+```
+# extract latd , longd
+# lay thong tin toa do voi latd vi do, longd kinh do
+lat,lon = cities['latd'],cities['longd']
+# lay them thong tin nhu dan so va tong dien tich
+polulation,area = cities['population_total'],cities['area_total_km2']
+
+# plt.figure(figsize(8,10)) #size to graph
+
+plt.style.use('seaborn') #set style
+
+# plot using pylot API
+# sactter use drow dot graph
+plt.scatter(lon,lat,c=np.log10(polulation),
+            cmap='viridis',s=area,
+           linewidths=0,alpha=0.5);
+# trang tri
+plt.axis('equal');
+plt.xlabel('longtitude')
+plt.ylabel('latitude');
+# thanh tab3
+plt.colorbar(label='log$_{10}&(population)');
+plt.clim(3,7);
 
 
+#creat a lengend for cites size
+area_range = [50,100,300,500]
+for area in area_range:
+    plt.scatter([],[],s=area,c='k',alpha=0.4,
+                
+                label=str(area) + 'km$^2$')
+plt.legend(labelspacing = 1,title='City Area') #scatterpoints=1
+
+
+plt.title('California Cites: Population and Area Distribution');
+```
+# End matplotlib
 
 
