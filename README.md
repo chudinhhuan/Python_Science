@@ -36,11 +36,12 @@ df.info()
 - value_counts() : đếm tổng các giá trị
 - nunique() : item duy nhất tức là trong dataset chỉ có một cái đó thôi
 
-# Xem thêm tại đây : 
+# Xem thêm Pandas tại đây : 
 [Xem thêm tại đây ](https://github.com/chudinhhuan/Python_Science/blob/main/lesson1.ipynb)
 
 
 ## end pandas - thiếu bổ sung sau nhé !!
+![image](https://user-images.githubusercontent.com/90398366/164959859-3e9b9845-b3e1-4e09-98d7-1ea8a7d56c7b.png)
 
 # II.Tìm hiểu về thư viện numpy
 ![numpy](https://user-images.githubusercontent.com/90398366/164952064-326477c9-ba08-44a8-af59-c4b7be43deeb.png)
