@@ -241,7 +241,11 @@ plt.legend(labelspacing = 1,title='City Area') #scatterpoints=1
 
 plt.title('California Cites: Population and Area Distribution');
 ```
+# Hiểu rõ hơn bấm vào đây 
+[hiểu rõ hơn](https://github.com/chudinhhuan/Python_Science/blob/main/lesson3_matplotlib.ipynb)
+
 ![image](https://user-images.githubusercontent.com/90398366/164960483-97eb77d4-0468-40c0-a052-f7d4d74c4599.png)
+
 
 # End matplotlib
 
