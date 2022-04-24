@@ -144,6 +144,8 @@ weekly_sales
 # end numpy - thiếu bổ sung sau !
 
 # III . Tìm hiểu về thư viện Matplotlip 
+![image](https://user-images.githubusercontent.com/90398366/164960474-2cd6f99a-4454-4780-908f-f69b4e68d7e2.png)
+
 ### import library 
 ```
 import pandas as pd
@@ -239,6 +241,8 @@ plt.legend(labelspacing = 1,title='City Area') #scatterpoints=1
 
 plt.title('California Cites: Population and Area Distribution');
 ```
+![image](https://user-images.githubusercontent.com/90398366/164960483-97eb77d4-0468-40c0-a052-f7d4d74c4599.png)
+
 # End matplotlib
 
 
