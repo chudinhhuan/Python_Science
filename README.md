@@ -11,6 +11,7 @@ import numpy as np
 ### Đọc file dataset 
 - Lấy dataset
 [dataset](https://github.com/chudinhhuan/Python_Science/blob/main/chipotle.tsv.txt)
+- Cách đọc dataset : 
 ``` df = pd.read_csv("chipotle.tsv.txt",sep="\t") ```
 - đọc các hàng đầu 
 ``` df.head()
