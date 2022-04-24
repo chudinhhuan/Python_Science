@@ -1,5 +1,5 @@
 # Python Science 
-# I.Tìm hiểu về thư viện pandas 
+# I.Tìm hiểu về thư viện pandas  
 ![pandas](https://user-images.githubusercontent.com/90398366/164951745-80fd0300-5c22-4b67-bcb1-68a7dd9ad8fd.png)
 
 ## 1.Cách import thư viện 
@@ -35,6 +35,10 @@ df.info()
 - sort_values(ascending = False) -> lớn -> bé
 - value_counts() : đếm tổng các giá trị
 - nunique() : item duy nhất tức là trong dataset chỉ có một cái đó thôi
+
+# Xem thêm tại đây : 
+[Xem thêm tại đây ](https://github.com/chudinhhuan/Python_Science/blob/main/lesson1.ipynb)
+
 
 ## end pandas - thiếu bổ sung sau nhé !!
 
