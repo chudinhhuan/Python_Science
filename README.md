@@ -9,6 +9,8 @@ import numpy as np
 ```
 ## 2.Các câu lệnh và thao tác với pandas
 ### Đọc file dataset 
+- Lấy dataset
+[dataset](https://github.com/chudinhhuan/Python_Science/blob/main/chipotle.tsv.txt)
 ``` df = pd.read_csv("chipotle.tsv.txt",sep="\t") ```
 - đọc các hàng đầu 
 ``` df.head()
@@ -249,4 +251,17 @@ plt.title('California Cites: Population and Area Distribution');
 
 # End matplotlib
 
-
+# IV. Tìm hiều về thư viện Seaborn 
+![image](https://user-images.githubusercontent.com/90398366/164960608-b472385b-7846-4633-b389-a30c525a908b.png)
+> Seaborn có sẵn một số dataset để học tập
+## Một số kỹ thuật trong seaborn
+- Distribution: Histogram(biểu đồ phân bố tần suất),KDE - phân bổ ước lượng ,displot\
+- Bar Plot : biểu đồ cột
+- Count Plot : biểu đồ thể hiện số lượng
+- Facel Plot : đồ thị dạng 2D
+- Box plot : phương pháp mô tả bằng đồ thị từ nhóm dữ liệu thông qua các phần tử của mảng
+- Join Plot : biểu đồ hình dung phân phối chuẩn
+- Pair Plot
+- Heat Map : kỹ thuật trực quan hóa dữ liệu cho thấy cường độ là màu sắc hai chiều
+## Xem nhiều hơn để hiểu rõ hơn
+[seaborn] (http://localhost:8888/notebooks/Desktop/PandasPyhon/lesson4_Seaborn.ipynb)
