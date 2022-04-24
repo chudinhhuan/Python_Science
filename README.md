@@ -265,4 +265,4 @@ plt.title('California Cites: Population and Area Distribution');
 - Pair Plot
 - Heat Map : kỹ thuật trực quan hóa dữ liệu cho thấy cường độ là màu sắc hai chiều
 ## Xem nhiều hơn để hiểu rõ hơn
-[seaborn] (http://localhost:8888/notebooks/Desktop/PandasPyhon/lesson4_Seaborn.ipynb)
+[Seaborn](https://github.com/chudinhhuan/Python_Science/blob/main/lesson4_Seaborn.ipynb)
