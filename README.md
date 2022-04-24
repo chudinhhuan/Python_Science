@@ -1,8 +1,8 @@
 # Python Science 
-# I.Tìm hiểu về thư viện pandas  
+# I. thư viện pandas  
 ![pandas](https://user-images.githubusercontent.com/90398366/164951745-80fd0300-5c22-4b67-bcb1-68a7dd9ad8fd.png)
 
-## 1.Cách import thư viện 
+## 1.import thư viện 
 ``` 
 import pandas as pd
 import numpy as np
@@ -39,14 +39,14 @@ df.info()
 - value_counts() : đếm tổng các giá trị
 - nunique() : item duy nhất tức là trong dataset chỉ có một cái đó thôi
 
-# Xem thêm Pandas tại đây : 
+# file demo : 
 [Xem thêm tại đây ](https://github.com/chudinhhuan/Python_Science/blob/main/lesson1.ipynb)
 
 
-## end pandas - thiếu bổ sung sau nhé !!
+## end pandas 
 ![image](https://user-images.githubusercontent.com/90398366/164959859-3e9b9845-b3e1-4e09-98d7-1ea8a7d56c7b.png)
 
-# II.Tìm hiểu về thư viện numpy
+# II.thư viện numpy
 ![numpy](https://user-images.githubusercontent.com/90398366/164952064-326477c9-ba08-44a8-af59-c4b7be43deeb.png)
 
 ## Import thư viện
@@ -140,13 +140,13 @@ weekly_sales['Total Price'] = total_prices
 weekly_sales 
 
 ```
-# Xem thêm tại đây để hiểu rõ hơn 
+# file demo
 [xem thêm tại đây](https://github.com/chudinhhuan/Python_Science/blob/main/lesson2-numpy.ipynb)
 ![image](https://user-images.githubusercontent.com/90398366/164959939-77f17ead-c6da-4e82-a860-e84340cb33b3.png)
 
 # end numpy - thiếu bổ sung sau !
 
-# III . Tìm hiểu về thư viện Matplotlip 
+# III . thư viện Matplotlip 
 ![image](https://user-images.githubusercontent.com/90398366/164960474-2cd6f99a-4454-4780-908f-f69b4e68d7e2.png)
 
 ### import library 
@@ -293,5 +293,5 @@ title = 'Correlation matrix\nSampled cereals composition\n' #su tuong quan giua 
 ax.set_title(title,loc='left',fontsize=28);
 
 ```
-## Xem nhiều hơn để hiểu rõ hơn
+## file demo
 [Seaborn](https://github.com/chudinhhuan/Python_Science/blob/main/lesson4_Seaborn.ipynb)
