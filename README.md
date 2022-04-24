@@ -264,5 +264,34 @@ plt.title('California Cites: Population and Area Distribution');
 - Join Plot : biểu đồ hình dung phân phối chuẩn
 - Pair Plot
 - Heat Map : kỹ thuật trực quan hóa dữ liệu cho thấy cường độ là màu sắc hai chiều
+
+## Example 
+```
+# draw headmap
+# vmin, vmax -> điều chỉnh thanh bar
+# linecolor="color" -> đường ngăn cách
+# diverging_palette(value_color,as_cmap=True) -> thang màu
+
+
+cmap = sns.diverging_palette(0,230,90,40, as_cmap=True)
+fig,ax = plt.subplots(figsize=(10,8))
+# fig,ax = plt.subplots(điều chỉnh size)
+sns.heatmap(data=adjusted_mask_corr,mask=adjusted_mask,
+           annot=True,fmt=".2f",cmap=cmap,
+            linecolor="white",linewidths=0.5
+           );
+# sns.heatmap(data = data_input ,mask = mask_input,annot=True(in giá trị từng ô),fmt=".2f"(làm tròn ),cmap="color")
+# lam cho x va y label viet hoa
+yticks = [i.upper() for i in adjusted_mask_corr.index]
+xticks = [i.upper() for i in adjusted_mask_corr.columns]
+
+# điều chỉnh góc hiển thị chữ 
+ax.set_yticklabels(yticks,rotation=0)
+ax.set_xticklabels(xticks,rotation=90);
+
+title = 'Correlation matrix\nSampled cereals composition\n' #su tuong quan giua cac chat dinh duong trong ngu coc
+ax.set_title(title,loc='left',fontsize=28);
+
+```
 ## Xem nhiều hơn để hiểu rõ hơn
 [Seaborn](https://github.com/chudinhhuan/Python_Science/blob/main/lesson4_Seaborn.ipynb)
